@@ -15,7 +15,7 @@ const CartItem =({value,title,img,increment,decrement})=>(
         </div>
         <div>
             <button onClick={decrement}>-</button>
-            <input type='number' readOnly value={0}/>
+            <input type='number' readOnly value={value}/>
             <button onClick={increment}>+</button>
         </div>
     </div>
@@ -124,4 +124,4 @@ const Cart = () => {
   )
 }
 
-export default Cart
+export default Cart;

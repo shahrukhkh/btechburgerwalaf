@@ -3,17 +3,17 @@ import {server} from "../store";
 
 
 
-export const getAdminStats =()=>async(dispatch)=>{
+export const getAdminStats =() => async(dispatch)=>{
 
     try{
-        dispatch({type:"getDashboardStateRequest"});
+        dispatch({type:"getDashboardStatsRequest"});
         const {data} = await axios.get(`${server}/admin/stats`,{
             withCredentials:true,
         });
-        dispatch({type:"getDashboardStateSuccess", payload: data});        
+        dispatch({type:"getDashboardStatsSuccess", payload: data});        
 
     } catch(error){
-        dispatch({type:"getDashboardStateFail",payload:error.response.data.message});
+        dispatch({type:"getDashboardStatsFail",payload:error.response.data.message});
     }
 };
 export const getAdminUsers =()=>async(dispatch)=>{

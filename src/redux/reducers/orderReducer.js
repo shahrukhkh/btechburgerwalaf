@@ -26,6 +26,19 @@ export const orderReducer =createReducer({},{
         state.loading=false;
         state.error=action.payload;
     },
+    
+    clearMessage:(state)=>{
+        state.message=null;
+    },
+    clearError:(state)=>{
+        state.error=null;
+    },
+});
+
+export const ordersReducer = createReducer({orders:[]},{
+    getMyOrdersRequest:(state)=>{
+        state.loading=true;
+    },
     getMyOrdersSuccess:(state,action)=>{
         state.loading=false;
         state.orders=action.payload;
@@ -45,11 +58,11 @@ export const orderReducer =createReducer({},{
         state.loading=false;
         state.error=action.payload;
     },
-
-    clearMessage:(state)=>{
-        state.message=null;
-    },
+    
     clearError:(state)=>{
         state.error=null;
+    },
+    clearMessage:(state)=>{
+        state.message=null;
     },
 });

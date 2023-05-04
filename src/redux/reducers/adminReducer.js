@@ -5,16 +5,16 @@ import {createReducer} from "@reduxjs/toolkit";
 export const adminReducer= createReducer({orders: [], users:[]},{
 
 
-    getDashboardStateRequest:(state)=>{
+    getDashboardStatsRequest:(state)=>{
         state.loading =true;
     },
-    getDashboardStateSuccess:(state,action)=>{
+    getDashboardStatsSuccess:(state,action)=>{
         state.loading =false;
         state.usersCount=action.payload.userCount;
         state.ordersCount=action.payload.ordersCount;
         state.totalIncome=action.payload.totalCount;
     },
-    getDashboardStateFail:(state,action)=>{
+    getDashboardStatsFail:(state,action)=>{
         state.loading =false;
         state.error=action.payload;
     },

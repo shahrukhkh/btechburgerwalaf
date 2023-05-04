@@ -8,14 +8,6 @@ import { server } from '../../redux/store';
 
 const ConfirmOrder = () => {
 
-            // shippingInfo,
-            // orderItems,
-            // paymentMethod,
-            // itemsPrice,
-            // taxPrice,
-            // shippingCharges,
-            // totalAmount,
-        
   const [paymentMethod,setPaymentMethod]=useState(""); 
   const [disableBtn,setDisableBtn]=useState(false);
   

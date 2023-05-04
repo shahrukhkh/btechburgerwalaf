@@ -93,15 +93,3 @@ export const cartReducer =createReducer(initialState,{
     },
 });
 
-export const ordersReducer = createReducer({orders:[]},{
-    getMyOrdersRequest:(state)=>{
-        state.loading=true;
-    },
-    
-    clearError:(state)=>{
-        state.error=null;
-    },
-    clearMessage:(state)=>{
-        state.message=null;
-    },
-});

@@ -45,7 +45,6 @@ export const cartReducer =createReducer(initialState,{
         state.cartItems.burgerWithFries.quantity -=1;
     },
 
-
     claculatePrice:(state)=>{
 
         state.subTotal= state.cartItems.cheeseBurger.price * 

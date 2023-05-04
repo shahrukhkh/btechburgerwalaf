@@ -41,7 +41,7 @@ const Contact = () => {
             </motion.div>
         </motion.div>
     </section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

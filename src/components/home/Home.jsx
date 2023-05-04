@@ -11,8 +11,8 @@ const Home=()=> {
   whileInView:{
     x:0,
     opacity:1,
-  }
-  }
+  },
+  };
 
   return (<>
     <section className='home'>
@@ -39,4 +39,4 @@ transition={{delay:0.4,}}>Explore Menu</motion.a>
   );
 };
 
-export default Home
+export default Home;

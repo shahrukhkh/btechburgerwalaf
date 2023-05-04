@@ -14,7 +14,7 @@ const NotFound = () => {
             <Link to="/">Go To Home</Link>
         </main>
     </section>
-  )
-}
+  );
+};
 
-export default NotFound
+export default NotFound;

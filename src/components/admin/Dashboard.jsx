@@ -41,7 +41,7 @@ const Dashboard = () => {
     
     <section className='dashboard'>
        {
-        loading === false ?  <main>
+        loading === false ?  (<main>
             <article>
                 <Box title="Users" value={usersCount}/>
                 <Box title="Orders" value={ordersCount.total}/>
@@ -56,10 +56,10 @@ const Dashboard = () => {
                     <Doughnut data={data}/>
                 </aside>
             </section>
-        </main> : <Loader/>
+        </main>) :( <Loader/>)
        }
     </section>
   )
 }
 
-export default Dashboard
+export default Dashboard;

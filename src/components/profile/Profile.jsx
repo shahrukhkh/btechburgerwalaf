@@ -16,13 +16,13 @@ const Profile = () => {
         animate:{
             y:0,
             opacity:1,
-        } 
+        },
     };
     const dispatch=useDispatch();
     const {loading,user}=useSelector((state)=>state.auth);
     const logoutHandler =()=>{
         dispatch(logout());
-    }
+    };
     
   return (
     <section className='profile'>
@@ -33,7 +33,7 @@ const Profile = () => {
         <motion.h5 {...options} transition={{delay:0.3}}>{user.name}</motion.h5> 
         {
             user.role==="admin" && (<motion.div {...options} transition={{delay:0.5}}>
-            <Link to="/admin/dashboard"style={{borderRadius:0}} ><MdDashboard/>Dashboard</Link>
+            <Link to="/admin/dashboard" style={{borderRadius:0}} ><MdDashboard/>Dashboard</Link>
         </motion.div>)
         }
         <motion.div initial={{
@@ -54,7 +54,7 @@ const Profile = () => {
     </main> ): (<Loader />)
    }
     </section>
-  )
-}
+  );
+};
 
 export default Profile;

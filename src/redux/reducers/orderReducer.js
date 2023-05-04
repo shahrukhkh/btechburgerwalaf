@@ -1,8 +1,5 @@
 import { createReducer } from "@reduxjs/toolkit";
 
-
-
-
 export const orderReducer =createReducer({},{
     createOrderRequest: (state)=>{
         state.loading=true;

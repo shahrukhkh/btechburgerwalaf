@@ -13,4 +13,4 @@ const PaymentSuccess = () => {
   )
 }
 
-export default PaymentSuccess
+export default PaymentSuccess;

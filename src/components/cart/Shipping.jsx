@@ -42,14 +42,14 @@ const Shipping = () => {
                 </div>
                 <div>
                     <label>City</label>
-                    <input type='text' placeholder='Enter City.'value={city} onChange={(e)=>setCity(e.target.value)} required></input>
+                    <input type='text' placeholder='Enter City'value={city} onChange={(e)=>setCity(e.target.value)} required></input>
                 </div>
                 <div>
                     <label>Country</label>
                     <select value={country} onChange={(e)=>setCountry(e.target.value)} required>
                         <option value="">Country</option>
                         {
-                            Country && Country.getAllCountries().map(i=>(
+                            Country && Country.getAllCountries().map((i)=>(
                                 <option value={i.isoCode} key={i.isoCode}>{i.name}</option>
                             ))
                         }
@@ -62,7 +62,7 @@ const Shipping = () => {
                             <select value={state} onChange={(e)=>setState(e.target.value)} required>
                         <option value="">State</option>
                         {
-                            State && State.getStatesOfCountry(country).map(i=>(
+                            State && State.getStatesOfCountry(country).map((i)=>(
                                 <option value={i.isoCode} key={i.isoCode}>{i.name}</option>
                             ))
                         }
@@ -73,11 +73,11 @@ const Shipping = () => {
                     }
                 <div>
                     <label>Pincode</label>
-                    <input type='text' placeholder='Enter Pincode.' value={pinCode} onChange={(e)=>setPinCode(e.target.value)} required></input>
+                    <input type='number' placeholder='Enter Pincode.' value={pinCode} onChange={(e)=>setPinCode(e.target.value)} required></input>
                 </div>
                 <div>
                     <label>Phone No</label>
-                    <input type='text' placeholder='Enter Phone No.' value={phoneNo} onChange={(e)=>setPhoneNo(e.target.value)} required></input>
+                    <input type='number' placeholder='Enter Phone No.' value={phoneNo} onChange={(e)=>setPhoneNo(e.target.value)} required></input>
                 </div>
                 <button type='submit'>Confirm Order</button>
             </form>
@@ -86,4 +86,4 @@ const Shipping = () => {
   )
 }
 
-export default Shipping
+export default Shipping;

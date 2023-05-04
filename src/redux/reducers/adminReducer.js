@@ -1,7 +1,5 @@
 import {createReducer} from "@reduxjs/toolkit";
 
-
-
 export const adminReducer= createReducer({orders: [], users:[]},{
 
 

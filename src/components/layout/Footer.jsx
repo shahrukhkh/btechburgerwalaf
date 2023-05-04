@@ -21,7 +21,7 @@ const Footer = () => {
 
         </aside>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

@@ -12,8 +12,7 @@ const Users = () => {
     },[dispatch]);
   return (
     <section className='tableClass'>
-        {
-            loading===false ?(<main>
+        {loading===false ?(<main>
             <table>
 
                 <thead>
@@ -30,7 +29,7 @@ const Users = () => {
                 
                 <tbody>
                    {
-                    users && users.map(i=>(
+                    users && users.map((i)=>(
                         <tr key={i._id}>
                         <td>#{i._id}</td>
                         <td>{i.name}</td>
@@ -54,4 +53,4 @@ const Users = () => {
   )
 }
 
-export default Users
+export default Users;

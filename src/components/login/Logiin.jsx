@@ -21,7 +21,7 @@ const Login = () => {
         <FcGoogle />
     </motion.button>
     </section>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;

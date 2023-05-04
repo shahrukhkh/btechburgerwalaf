@@ -30,4 +30,4 @@ const Abbout = () => {
   )
 }
 
-export default Abbout
+export default Abbout;

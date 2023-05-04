@@ -21,7 +21,7 @@ const CartItem =({value,title,img,increment,decrement})=>(
     </div>
 
     
-)
+);
 
 const Cart = () => {
 
@@ -35,7 +35,7 @@ const Cart = () => {
     shippingCharges,
     total,}=useSelector((state)=>state.cart);
     const {cartItems:orderItems}=useSelector((state)=>state.cart);
-    const dispatch =useDispatch()
+    const dispatch =useDispatch();
     const increment=(item)=>{
         switch(item) {
             case 1:
@@ -112,7 +112,7 @@ const Cart = () => {
                 <div>
                     <h4>Shipping Charges</h4>
                     <p>₹{shippingCharges}</p>
-                </div>
+                </div>{" "}
                 <div>
                     <h4>Total</h4>
                     <p>₹{total}</p>

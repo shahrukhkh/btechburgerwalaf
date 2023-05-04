@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 import Loader from '../layout/Loader';
 
 const OrderDtails = () => {
-    const params=useParams()
+    const params=useParams();
     const {order,loading}= useSelector((state)=>state.orders);
     const dispatch =useDispatch();
     useEffect(()=>{
@@ -22,7 +22,7 @@ const OrderDtails = () => {
                     <h1>Shipping</h1>
                     <p>
                         <b>Address</b>
-                        {`${order.shippingInfo.hNo} ${order.shippingInfo.city} ${order.shippingInfo.state} ${order.shippingInfo.country}`}
+                        {`${order.shippingInfo.hNo} ${order.shippingInfo.city} ${order.shippingInfo.state} ${order.shippingInfo.country} ${order.shippingInfo.pinCode}`}
                     </p>
                 </div>
                 <div>
@@ -59,7 +59,7 @@ const OrderDtails = () => {
                     </p>
                     <p>
                         <b>Payment Reference At</b>
-                        {order.paymentMethod==="Online"? `#${order.paymentMethod}`:"NA"}
+                        {order.paymentMethod==="Online"? `#${order.paymentInfo}`:"NA"}
                     </p>
                     <p>
                         <b>Paid At</b>
@@ -115,7 +115,7 @@ const OrderDtails = () => {
         </main>) : (<Loader />)
         }
     </section>
-  )
-}
+  );
+};
 
-export default OrderDtails
+export default OrderDtails;

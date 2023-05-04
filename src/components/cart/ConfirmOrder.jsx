@@ -53,8 +53,6 @@ const ConfirmOrder = () => {
                 const {razorpay_payment_id,razorpay_order_id,razorpay_signature}=response;
                 dispatch(paymentVerification(razorpay_payment_id,razorpay_order_id,razorpay_signature,orderOptions));
             },
-            
-            
             theme: {
                 color: "#050404",
             }

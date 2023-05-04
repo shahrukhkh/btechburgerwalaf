@@ -31,7 +31,6 @@ export const authReducer = createReducer(
         state.isAuthenticated=true;
         state.error=action.payload;
     },
-
     clearError:(state)=>{
         state.error=null;
     },

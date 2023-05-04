@@ -93,9 +93,6 @@ function App() {
       <Route path="/order/:id" element={<OrderDtails />} />
     </Route>
     
-    
-    
-    
     <Route element={<ProtectedRoute isAuthenticated={isAuthenticated}
       adminRoute={true}
       isAdmin={user && user.role==="admin"}
@@ -106,19 +103,13 @@ function App() {
     <Route path="/admin/orders" element={<Orders />} />
     </Route>
     
-    
-   
-    
-    
-    
-    
     <Route path="*" element={<NotFound />} />
     </Routes>
 
     <Footer />
     <Toaster />
 
-  </Router>)
+  </Router>);
 }
 
 export default App;

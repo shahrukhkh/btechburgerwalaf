@@ -46,8 +46,8 @@ const Orders = () => {
                 
                 <tbody>
                    {
-                    orders && orders.map(i=>(
-                        <tr key={i._id}>
+                    orders && orders.map((i)=>(
+                        <tr key={i}>
                         <td>#{i._id}</td>
                         <td>{i.orderStatus}</td>
                         <td>
@@ -75,4 +75,4 @@ const Orders = () => {
   )
 }
 
-export default Orders
+export default Orders;

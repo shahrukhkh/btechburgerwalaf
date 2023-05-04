@@ -2,7 +2,7 @@ import React from 'react';
 import {motion} from "framer-motion";
 
 const MenuCard = ({itemNum, burgerSrc, price,title,handler, delay=0}) => {
-  return <motion.div className='menuCard'
+  return (<motion.div className='menuCard'
   
   initial={{x:"-100%",
   opacity:0,}}
@@ -17,7 +17,7 @@ const MenuCard = ({itemNum, burgerSrc, price,title,handler, delay=0}) => {
         <p>{title}</p>
         <button onClick={()=>handler(itemNum)}>Buy Now</button>
     </main>
-  </motion.div>
+  </motion.div>);
 };
 
-export default MenuCard
+export default MenuCard;

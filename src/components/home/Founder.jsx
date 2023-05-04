@@ -10,8 +10,8 @@ const Founder = () => {
   whileInView:{
     x:0,
     opacity:1,
-  }
-  }
+  },
+  };
   return (
     <section className='founder'>
     <motion.div
@@ -22,12 +22,12 @@ const Founder = () => {
 
       <p>Hey, Everyone I am Shah Rukh Khan , The founder of BTECH Burger Wala.
       <br />
-      Our aim is to create the most tasty burger on planet.
+      Our aim is to prepare the most tasty burger on planet.
       </p> <br />
     </motion.div>
 
     </section>
-  )
-}
+  );
+};
 
-export default Founder
+export default Founder;

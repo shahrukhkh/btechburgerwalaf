@@ -72,7 +72,7 @@ const ConfirmOrder = () => {
         navigate("/paymentsuccess");
     }
     if(error){
-        toast.error(message);
+        toast.error(error);
         dispatch({type:"clearError"});
         setDisableBtn(false);
     }
@@ -98,4 +98,4 @@ const ConfirmOrder = () => {
   )
 }
 
-export default ConfirmOrder
+export default ConfirmOrder;

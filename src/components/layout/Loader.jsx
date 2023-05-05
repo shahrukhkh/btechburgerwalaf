@@ -16,8 +16,8 @@ const Loader = () => {
       repeatType: "reverse",
     },
   };
-  return (
-    <div className='loader'>
+  return ( 
+    <div {...options} className='loader'>
       <IoFastFoodOutline/>
     <div>
         <motion.p  >Loading...</motion.p>

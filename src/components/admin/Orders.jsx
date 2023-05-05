@@ -47,7 +47,7 @@ const Orders = () => {
                 <tbody>
                    {
                     orders && orders.map((i)=>(
-                        <tr key={i}>
+                        <tr key={i._id}>
                         <td>#{i._id}</td>
                         <td>{i.orderStatus}</td>
                         <td>

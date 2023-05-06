@@ -44,7 +44,7 @@ const OrderDtails = () => {
                     </p>
                     <p>
                         <b>Placed At</b>
-                        {order.createAt.splite("T")[0]}
+                        {order.createAt.split("T")[0]}
                     </p>
                     <p>
                         <b>Delivered At</b>

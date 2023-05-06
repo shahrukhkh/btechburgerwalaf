@@ -44,8 +44,8 @@ const MyOrders = () => {
                         <tr key={i._id}>
                         <td>#{i._id}</td>
                         <td>{i.orderStatus}</td>
-                        <td>
-                            {i.orderitems?.cheeseBurger.quantity+
+                        <td>{
+                            i.orderitems?.cheeseBurger.quantity+
                             i.orderitems?.vegCheeseBurger.quantity+
                             i.orderitems?.burgerWithFries.quantity}
                             </td>

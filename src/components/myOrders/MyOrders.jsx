@@ -10,7 +10,7 @@ import { toast } from 'react-hot-toast';
 const MyOrders = () => {
 
     const dispatch = useDispatch();
-    const {orders,loading,error} =useSelector((state)=>state?.orders);
+    const {orders,loading,error} =useSelector((state)=>state.orders);
 
     useEffect(()=>{
 
@@ -45,9 +45,9 @@ const MyOrders = () => {
                         <td>#{i._id}</td>
                         <td>{i.orderStatus}</td>
                         <td>
-                            {i.orderitems.cheeseBurger.quantity+
-                            i.orderitems.vegCheeseBurger.quantity+
-                            i.orderitems.burgerWithFries.quantity}
+                            {i.orderitems?.cheeseBurger.quantity+
+                            i.orderitems?.vegCheeseBurger.quantity+
+                            i.orderitems?.burgerWithFries.quantity}
                             </td>
                         <td>₹{i.totalAmount}</td>
                         <td>{i.paymentMethod}</td>

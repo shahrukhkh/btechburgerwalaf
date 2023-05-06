@@ -6,7 +6,7 @@ import Loader from '../layout/Loader';
 
 const OrderDtails = () => {
     const params=useParams();
-    const {order,loading}= useSelector((state)=>state.orders);
+    const {order,loading}= useSelector((state)=>state?.orders);
     const dispatch =useDispatch();
     useEffect(()=>{
         dispatch(getOrderDetails(params.id));

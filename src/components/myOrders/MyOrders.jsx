@@ -10,7 +10,7 @@ import { toast } from 'react-hot-toast';
 const MyOrders = () => {
 
     const dispatch = useDispatch();
-    const {orders,loading,error} =useSelector((state)=>state.orders);
+    const {orders,loading,error} =useSelector((state)=>state?.orders);
 
     useEffect(()=>{
 

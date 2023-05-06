@@ -5,7 +5,7 @@ import Loader from '../layout/Loader';
 
 const Users = () => {
     const dispatch = useDispatch();
-    const {loading,users}= useSelector((state)=>state.admin);
+    const {loading,users}= useSelector((state)=>state?.admin);
 
     useEffect(()=>{
         dispatch(getAdminUsers());

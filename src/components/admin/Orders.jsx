@@ -9,7 +9,7 @@ import toast from "react-hot-toast";
 
 const Orders = () => {
     const dispatch = useDispatch();
-    const {loading,orders,message,error}= useSelector((state)=>state.admin);
+    const {loading,orders,message,error}= useSelector((state)=>state?.admin);
     const processOrderHandler=(id)=>{
         dispatch(processOrder(id));
     };

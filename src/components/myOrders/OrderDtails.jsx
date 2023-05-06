@@ -6,7 +6,7 @@ import Loader from '../layout/Loader';
 
 const OrderDtails = () => {
     const params=useParams();
-    const {order,loading}= useSelector((state)=>state?.orders);
+    const {order,loading}= useSelector((state)=>state.orders);
     const dispatch =useDispatch();
     useEffect(()=>{
         dispatch(getOrderDetails(params.id));
@@ -91,19 +91,19 @@ const OrderDtails = () => {
                 <div>
                     <h4>Cheese Burger </h4>
                     <div>
-                        <span>{order.orderItems.cheeseBurger.quantity}</span> x {" "}<span>{order.orderItems.cheeseBurger.price}</span> 
+                        <span>{order.orderItems.cheeseBurger.quantity}</span> x {" "}<span>{order.orderItems?.cheeseBurger.price}</span> 
                     </div>
                 </div>
                 <div>
                     <h4>Veg Cheese Burger </h4>
                     <div>
-                        <span>{order.orderItems.vegCheeseBurger.quantity}</span> x{" "} <span>{order.orderItems.vegCheeseBurger.price}</span> 
+                        <span>{order.orderItems.vegCheeseBurger.quantity}</span> x{" "} <span>{order.orderItems?.vegCheeseBurger.price}</span> 
                     </div>
                 </div>
                 <div>
                     <h4>Cheese Burger with French Fries</h4>
                     <div>
-                        <span>{order.orderItems.burgerWithFries.quantity}</span> x{" "} <span>{order.orderItems.burgerWithFries.price}</span> 
+                        <span>{order.orderItems.burgerWithFries.quantity}</span> x{" "} <span>{order.orderItems?.burgerWithFries.price}</span> 
                     </div>
                 </div>
                 <div>

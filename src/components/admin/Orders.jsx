@@ -9,7 +9,7 @@ import toast from "react-hot-toast";
 
 const Orders = () => {
     const dispatch = useDispatch();
-    const {loading,orders,message,error}= useSelector((state)=>state?.admin);
+    const {loading,orders,message,error}= useSelector((state)=>state.admin);
     const processOrderHandler=(id)=>{
         dispatch(processOrder(id));
     };
@@ -51,9 +51,9 @@ const Orders = () => {
                         <td>#{i._id}</td>
                         <td>{i.orderStatus}</td>
                         <td>
-                            {i.orderitems.cheeseBurger.quantity+
-                            i.orderitems.vegCheeseBurger.quantity+
-                            i.orderitems.burgerWithFries.quantity}
+                            {i.orderitems?.cheeseBurger.quantity+
+                            i.orderitems?.vegCheeseBurger.quantity+
+                            i.orderitems?.burgerWithFries.quantity}
                             </td>
                         <td>₹{i.totalAmount}</td>
                         <td>{i.paymentMethod}</td>

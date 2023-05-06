@@ -21,7 +21,7 @@ const Box=({title, value})=>(
 const Dashboard = () => {
 
     const dispatch = useDispatch();
-    const {loading,usersCount,ordersCount,totalIncome} = useSelector((state)=>state?.admin);
+    const {loading,usersCount,ordersCount,totalIncome} = useSelector((state)=>state.admin);
 
     useEffect(()=>{
         dispatch(getAdminStats());

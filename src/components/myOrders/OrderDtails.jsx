@@ -70,19 +70,19 @@ const OrderDtails = () => {
                     <h1>Amount</h1>
                     <p>
                         <b>Items Total</b>
-                        ₹{order.itemsPrice}
+                        ₹{order?.itemsPrice}
                     </p>
                     <p>
                         <b>Shipping Charges</b>
-                        ₹{order.shippingCharges}
+                        ₹{order?.shippingCharges}
                     </p>
                     <p>
                         <b>Tax</b>
-                        ₹{order.taxPrice}
+                        ₹{order?.taxPrice}
                     </p>
                     <p>
                         <b>Total Amount</b>
-                        ₹{order.totalAmount}
+                        ₹{order?.totalAmount}
                     </p>
                     
                 </div>
@@ -91,19 +91,19 @@ const OrderDtails = () => {
                 <div>
                     <h4>Cheese Burger </h4>
                     <div>
-                        <span>{order.orderItems.cheeseBurger.quantity}</span> x {" "}<span>{order.orderItems?.cheeseBurger.price}</span> 
+                        <span>{order.orderItems?.cheeseBurger.quantity}</span> x {" "}<span>{order.orderItems?.cheeseBurger.price}</span> 
                     </div>
                 </div>
                 <div>
                     <h4>Veg Cheese Burger </h4>
                     <div>
-                        <span>{order.orderItems.vegCheeseBurger.quantity}</span> x{" "} <span>{order.orderItems?.vegCheeseBurger.price}</span> 
+                        <span>{order.orderItems?.vegCheeseBurger.quantity}</span> x{" "} <span>{order.orderItems?.vegCheeseBurger.price}</span> 
                     </div>
                 </div>
                 <div>
                     <h4>Cheese Burger with French Fries</h4>
                     <div>
-                        <span>{order.orderItems.burgerWithFries.quantity}</span> x{" "} <span>{order.orderItems?.burgerWithFries.price}</span> 
+                        <span>{order.orderItems?.burgerWithFries.quantity}</span> x{" "} <span>{order.orderItems?.burgerWithFries.price}</span> 
                     </div>
                 </div>
                 <div>
